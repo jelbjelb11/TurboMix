@@ -50,6 +50,7 @@
     <Compile Include="BasculaService.cs" />
     <Compile Include="Plato.cs" />
     <Compile Include="Receta.cs" />
+    <Compile Include="RecetaRepositorio.cs" />
     <Compile Include="TurboMixService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

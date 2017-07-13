@@ -50,7 +50,8 @@ namespace TurboMix
 
             }
             Plato plato = new Plato();
-
+            RecetaRepositorio recetaRepositorio = new RecetaRepositorio();
+            recetaRepositorio.listaRecetas.Add(r);
             return plato;
         }
 

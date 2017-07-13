@@ -9,13 +9,6 @@ namespace TurboMixTest
     public class TurboMixServiceTest
     {
 
-        private Alimento alimento1;
-        private Alimento alimento2;
-        private TurboMixService sut;
-        private Receta receta;
-        private Alimento alimentoCocinado1;
-        private Alimento alimentoCocinado2;
-
         [TestMethod]
         public void TestPrepararPlato()
         {
