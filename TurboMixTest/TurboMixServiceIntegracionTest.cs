@@ -20,7 +20,7 @@ namespace TurboMixTest
             IBasculaService basculaService = new BasculaService();
             ICocinaService cocinaService = new CocinaService();
 
-            sut = new TurboMixService(basculaService, cocinaService);
+            sut = new TurboMixService(basculaService, cocinaService,null);
             alimento1 = new Alimento();
             alimento1.Peso = 1.5f;
             alimento1.Calentado = true;

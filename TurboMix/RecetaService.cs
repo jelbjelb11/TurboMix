@@ -20,5 +20,25 @@ namespace TurboMix
         {
             recetaRepository.Crear(receta);
         }
+
+        public void Leer(String receta)
+        {
+            recetaRepository.Read(receta);
+        }
+
+        public void Actualizar(Receta receta)
+        {
+            recetaRepository.Update(receta);
+        }
+
+        public void Borrar(Receta receta)
+        {
+            recetaRepository.Delete(receta);
+        }
+
+        public void ListarTodo()
+        {
+            recetaRepository.ShowAll();
+        }
     }
 }

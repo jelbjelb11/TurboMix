@@ -4,7 +4,10 @@ namespace TurboMix
 {
     public interface IRecetaRepository
     {
-   //     List<Receta> listaRecetas { get; set; }
+        void Delete(Receta receta);
         void Crear(Receta receta);
+        Receta Read(string nombreReceta);
+        IList<Receta> ShowAll();
+        void Update(Receta receta);
     }
 }

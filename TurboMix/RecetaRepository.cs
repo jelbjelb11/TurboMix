@@ -21,5 +21,29 @@ namespace TurboMix
         {
             listaRecetas.Add(receta);
         }
+
+        public Receta Read(String nombreReceta)
+        {
+            Receta receta = new Receta();
+            receta.nombre = nombreReceta;
+            return receta;
+        }
+
+        public IList<Receta> ShowAll()
+        {
+            //TODO
+
+            return listaRecetas;
+        }
+
+        public void Update(Receta receta)
+        {
+            //TODO
+        }
+
+        public void Delete(Receta receta)
+        {
+            //TODO
+        }
     }
 }
