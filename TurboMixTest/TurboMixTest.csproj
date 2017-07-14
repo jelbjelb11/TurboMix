@@ -65,6 +65,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PesoTest.cs" />
     <Compile Include="CocinaServiceTest.cs" />
+    <Compile Include="RecetaServiceTest.cs" />
+    <Compile Include="RecetaIntegracionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TurboMix\TurboMix.csproj">
