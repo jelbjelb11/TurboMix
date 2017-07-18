@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TurboMix;
+using Microsoft.Practices.Unity;
 
 namespace TurboMixTest
 {
@@ -9,18 +10,31 @@ namespace TurboMixTest
     {
         private Alimento alimento1;
         private Alimento alimento2;
-        private TurboMixService sut;
-        private Receta receta;
+        private ITurboMixService sut;
+   //     private Receta receta;
         private Alimento alimentoCocinado1;
         private Alimento alimentoCocinado2;
 
         [TestInitialize]
         public void init()
         {
-            IBasculaService basculaService = new BasculaService();
-            ICocinaService cocinaService = new CocinaService();
+            //IBasculaService basculaService = new BasculaService();
+            //ICocinaService cocinaService = new CocinaService();
 
-            sut = new TurboMixService(basculaService, cocinaService,null);
+            IUnityContainer container = new UnityContainer();
+            container.RegisterType<ITurboMixService, TurboMixService>();
+            container.RegisterType<IRecetaRepository, RecetaRepository>();
+            container.RegisterType<ICocinaService, CocinaService>();
+            container.RegisterType<IBasculaService, BasculaService>();
+            container.RegisterType<IRecetaService, RecetaService>();
+
+            //container.RegisterType<IBasculaService, BasculaService>();
+            //container.RegisterType<ICocinaService, CocinaService>();
+
+            sut = container.Resolve<ITurboMixService>();
+
+
+       //     sut = new TurboMixService(basculaService, cocinaService,null);
             alimento1 = new Alimento();
             alimento1.Peso = 1.5f;
             alimento1.Calentado = true;
@@ -38,8 +52,8 @@ namespace TurboMixTest
         [TestMethod]
         public void TestPesarYCalentar()
         {
-            
 
+            
             Plato resultado = sut.PesarYCalentar(alimento1, alimento2);
             
             Plato mPlato = new Plato(alimento1, alimento2);
