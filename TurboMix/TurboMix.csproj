@@ -44,7 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimento.cs" />
+    <Compile Include="Aviso.cs" />
+    <Compile Include="AvisoRepository.cs" />
+    <Compile Include="AvisoService.cs" />
+    <Compile Include="CategoriaReceta.cs" />
+    <Compile Include="CategoriaRecetaRepository.cs" />
+    <Compile Include="CategoriaRecetaService.cs" />
     <Compile Include="CocinaService.cs" />
+    <Compile Include="ICategoriaRecetaRepository.cs" />
+    <Compile Include="ICategoriaRecetaService.cs" />
     <Compile Include="ICocinaService.cs" />
     <Compile Include="IBasculaService.cs" />
     <Compile Include="BasculaService.cs" />
