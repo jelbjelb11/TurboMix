@@ -13,7 +13,7 @@ namespace TurboMix
         public DateTime fecha { get; set; }
 
         public Aviso() { }
-        public Aviso(int id, int tipoAlerta, DateTime fecha)
+        public Aviso(int id, int criticidad, DateTime fecha)
         {
             this.id = id;
             this.criticidad = criticidad;

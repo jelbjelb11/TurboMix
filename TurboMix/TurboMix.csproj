@@ -44,28 +44,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimento.cs" />
-    <Compile Include="Aviso.cs" />
-    <Compile Include="AvisoRepository.cs" />
-    <Compile Include="AvisoService.cs" />
-    <Compile Include="CategoriaReceta.cs" />
-    <Compile Include="CategoriaRecetaRepository.cs" />
-    <Compile Include="CategoriaRecetaService.cs" />
+    <Compile Include="Aviso\Aviso.cs" />
+    <Compile Include="Aviso\AvisoRepository.cs" />
+    <Compile Include="Aviso\AvisoService.cs" />
+    <Compile Include="CategoriaReceta\CategoriaReceta.cs" />
+    <Compile Include="CategoriaReceta\CategoriaRecetaRepository.cs" />
+    <Compile Include="CategoriaReceta\CategoriaRecetaService.cs" />
+    <Compile Include="CategoriaReceta\ICategoriaRecetaRepository.cs" />
     <Compile Include="CocinaService.cs" />
-    <Compile Include="ICategoriaRecetaRepository.cs" />
-    <Compile Include="ICategoriaRecetaService.cs" />
+    <Compile Include="CategoriaReceta\ICategoriaRecetaService.cs" />
     <Compile Include="ICocinaService.cs" />
     <Compile Include="IBasculaService.cs" />
     <Compile Include="BasculaService.cs" />
-    <Compile Include="IRecetaRepository.cs" />
-    <Compile Include="IRecetaService.cs" />
+    <Compile Include="Receta\IRecetaRepository.cs" />
+    <Compile Include="Receta\IRecetaService.cs" />
     <Compile Include="ITurboMixService.cs" />
     <Compile Include="Plato.cs" />
-    <Compile Include="RecetaService.cs" />
-    <Compile Include="Receta.cs" />
-    <Compile Include="RecetaRepository.cs" />
+    <Compile Include="Receta\RecetaService.cs" />
+    <Compile Include="Receta\Receta.cs" />
+    <Compile Include="Receta\RecetaRepository.cs" />
     <Compile Include="TurboMixService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />

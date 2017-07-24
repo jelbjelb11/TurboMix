@@ -15,7 +15,7 @@ namespace TurboMix
             this.categoriaRecetaRepository = _categoriaRecetaRepository;
         }
 
-        public void Aniadir(Receta categoriaReceta)
+        public void Aniadir(CategoriaReceta categoriaReceta)
         {
             categoriaRecetaRepository.Crear(categoriaReceta);
         }
@@ -25,12 +25,12 @@ namespace TurboMix
             categoriaRecetaRepository.Read(categoriaReceta);
         }
 
-        public void Actualizar(Receta categoriaReceta)
+        public void Actualizar(CategoriaReceta categoriaReceta)
         {
             categoriaRecetaRepository.Update(categoriaReceta);
         }
 
-        public void Borrar(Receta categoriaReceta)
+        public void Borrar(CategoriaReceta categoriaReceta)
         {
             categoriaRecetaRepository.Delete(categoriaReceta);
         }

@@ -14,11 +14,12 @@ namespace TurboMix
         public CategoriaReceta categoriaReceta { get; set; }
 
         public Receta() { }
-        public Receta(Alimento alimentoPrincipal, Alimento alimentoSecundario, String nombre)
+        public Receta(Alimento alimentoPrincipal, Alimento alimentoSecundario, String nombre, CategoriaReceta categoriaReceta)
         {
             this.alimentoPrincipal = alimentoPrincipal;
             this.alimentoSecundario = alimentoSecundario;
             this.nombre = nombre;
+            this.categoriaReceta = categoriaReceta;
         }
 
 
